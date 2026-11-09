@@ -1,1 +1,50 @@
-:root { color-scheme: light; }
+:root {
+  color-scheme: light;
+  --krem: #F6F1E7;
+  --tekst: #2B2B2B;
+  --vino: #8E1B2E;
+  --zlato: #E3C567;
+}
+
+body {
+  background-color: var(--krem);
+  color: var(--tekst);
+}
+
+.navbar {
+  --bs-navbar-bg: var(--vino);
+  --bs-navbar-color: var(--krem);
+  --bs-navbar-hover-color: var(--zlato);
+  --bs-navbar-active-color: var(--zlato);
+  --bs-navbar-brand-color: var(--krem);
+  --bs-navbar-brand-hover-color: var(--zlato);
+}
+
+#izbornik {
+  --bs-drawer-bg: var(--vino);
+  --bs-drawer-color: var(--krem);
+}
+
+section {
+  min-height: 80vh;
+  padding: 4rem 1rem;
+}
+
+.hero {
+  background-color: var(--vino);
+  color: var(--krem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero .btn-solid {
+  --bs-theme-bg: var(--zlato);
+  --bs-theme-contrast: var(--tekst);
+}
